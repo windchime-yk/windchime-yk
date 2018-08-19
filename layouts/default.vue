@@ -1,13 +1,15 @@
 <template>
   <div>
+    <global-header/>
     <nuxt/>
+    <global-footer/>
   </div>
 </template>
 
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 62.5%;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,6 +21,15 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
 }
 
 .button--green {
@@ -50,4 +61,16 @@ html {
   background-color: #35495e;
 }
 </style>
+
+<script>
+import GlobalHeader from '~/components/GlobalHeader.vue'
+import GlobalFooter from '~/components/GlobalFooter.vue'
+
+export default {
+  components: {
+    GlobalHeader,
+    GlobalFooter
+  }
+}
+</script>
 

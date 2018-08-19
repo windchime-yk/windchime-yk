@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   min-height: 100vh;
   display: flex;
@@ -53,7 +53,7 @@ export default {
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: $mainColor;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
