@@ -20,6 +20,12 @@ module.exports = {
   /*
   ** Build configuration
   */
+  modules: [
+    ['nuxt-sass-resources-loader', [
+      '@/assets/sass/variable.scss',
+      '@/assets/sass/mixin.scss',
+    ]],
+  ],
   build: {
     /*
     ** Run ESLint on save
