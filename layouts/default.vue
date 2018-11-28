@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 62.5%;
@@ -27,9 +27,22 @@ li {
   list-style: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
 .container {
   width: 80%;
   margin-left: auto;
+  @include mq {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .button--green {
