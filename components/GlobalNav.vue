@@ -11,8 +11,16 @@
 </template>
 
 <style lang="scss" scoped>
+nav {
+  width: auto;
+  @include mq {
+    display: none;
+  }
+}
+.list {
+  padding-left: 20%;
+}
 .item {
-  text-align-last: left;
   font-size: 1.8rem;
 }
 .link {
