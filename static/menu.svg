@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="レイヤー_2" data-name="レイヤー 2">
+        <path fill="none" d="M0 0h48v48H0z" id="Rect_最後透明に_" data-name="Rect（最後透明に）"/>
+        <g id="icon">
+            <path class="cls-2" d="M10 12h28M10 24h28M10 36h28"/>
+        </g>
+    </g>
+</svg>
