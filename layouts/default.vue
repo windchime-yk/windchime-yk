@@ -26,7 +26,12 @@ html {
 li {
   list-style: none;
 }
-
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.8rem;
+}
 .container {
   width: 80%;
   margin-left: auto;
