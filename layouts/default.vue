@@ -1,8 +1,10 @@
 <template>
   <div>
     <global-header/>
-    <nuxt/>
-    <global-footer/>
+    <div class="contents__wrap">
+      <nuxt/>
+      <global-footer/>
+    </div>
   </div>
 </template>
 
