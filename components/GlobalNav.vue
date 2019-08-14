@@ -17,15 +17,16 @@ nav {
   }
 }
 .list {
-  padding-left: 20%;
+  display: flex;
 }
 .item {
   font-size: 1.8rem;
+  margin-left: 20px;
 }
 .link {
   text-transform: uppercase;
   text-decoration: none;
-  color: $linkColor;
+  color: $subColor;
 }
 </style>
 

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "WindoChimeYK Portfolio Site",
-  "author": "WindChimeYK <evan9274@gmail.com>",
+  "author": "WhyK <evan9274@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",

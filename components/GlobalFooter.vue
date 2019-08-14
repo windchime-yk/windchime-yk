@@ -1,6 +1,6 @@
 <template>
   <footer role="contentinfo" class="footer">
-    <small class="copy">&copy; 2018 WindChimeYK</small>
+    <small class="copy">&copy; 2019 WhyK</small>
   </footer>
 </template>
 

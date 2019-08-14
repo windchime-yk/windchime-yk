@@ -1,26 +1,21 @@
 <template>
   <div class="container">
-    <div class="notice__wrap">
-      <p class="notice__text">このサイトは現在試験構築中なので見た目が中途半端です</p>
-    </div>
     <section id="about" class="section__wrap">
-      <h2>About</h2>
-      <p>このサイトはWhyKのポートフォリオサイトです</p>
+      <h2 class="content__title">About</h2>
+      <p class="content__description">このサイトはWhyKのポートフォリオサイトです</p>
       <section>
-        <h3>Why? WhyK</h3>
+        <h3 class="content__title-sub">Why? WhyK</h3>
         <dl>
           <dt>WhyK（ほわぁいけー）</dt>
           <dd>そこらへんのフロントエンドエンジニア</dd>
           <dd>好きなものはVue SFCとアクセシビリティ</dd>
           <dd>嫌いなものはメモ帳コーディング</dd>
           <dd>Figmaでデザイン、VS Codeでコーディングするマン</dd>
-          <dd>好きなタイミングで好きなものを作ろうとして早々に挫折するマン</dd>
-          <dd>GitHubに溜まるdevelopブランチ止まりのレポジトリたち</dd>
         </dl>
       </section>
     </section>
     <section id="about" class="section__wrap">
-      <h2>Work</h2>
+      <h2 class="content__title">Work</h2>
       <ul>
         <li>
           <a href="https://github.com/windchime-yk/novel-support.js">
@@ -61,13 +56,13 @@
       </ul>
     </section>
     <section id="about" class="section__wrap">
-      <h2>Blog</h2>
+      <h2 class="content__title">Blog</h2>
       <p>ここに</p>
     </section>
     <section id="about" class="section__wrap">
-      <h2>Contact</h2>
+      <h2 class="content__title">Contact</h2>
       <ul>
-        <li><a href="mailto:windchimeyk@gmail.com">メール</a></li>
+        <li><a href="mailto:WhyK@gmail.com">メール</a></li>
         <li><a href="https://twitter.com/windchime_yk">Twitter</a></li>
       </ul>
     </section>
@@ -75,13 +70,6 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -94,6 +82,19 @@ export default {
   width: 80%;
   margin: 10px auto;
   padding: 20px;
+}
+
+.content__title {
+  font-size: 4rem;
+  text-align: center;
+}
+.content__title-sub {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.content__description {
+  text-align: center;
 }
 </style>
 

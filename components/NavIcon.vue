@@ -8,7 +8,11 @@
 
 <style lang="scss" scoped>
 button {
-  width: 50px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 25%);
 }
 .icon {
   display: none;

@@ -29,10 +29,17 @@ li {
   list-style: none;
 }
 h2 {
+  font-size: 3rem;
+}
+h3 {
   font-size: 2rem;
 }
-p {
+dt {
   font-size: 1.8rem;
+}
+dd,
+p {
+  font-size: 1.5rem;
 }
 
 button {
@@ -45,11 +52,12 @@ button {
 }
 
 .container {
-  width: 80%;
-  margin-left: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin: ($headerHeight + 20px) auto 0;
   @include mq {
-    width: 100%;
-    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: $headerHeightSp + 20px;
   }
 }
 
