@@ -1,6 +1,6 @@
 <template>
   <div class="icon">
-    <button>
+    <button @click="$emit('click')">
       <img src="~/static/menu.svg" alt="">
     </button>
   </div>

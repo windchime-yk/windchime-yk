@@ -2,11 +2,33 @@
   <header role="banner" class="header">
     <div class="header__wrap">
       <h1 class="title">SiB</h1>
-      <nav-icon/>
-      <global-nav/>
+      <nav-icon @click="navShow = !navShow" />
+      <global-nav :class="isActive" />
     </div>
   </header>
 </template>
+
+<script>
+import NavIcon from '~/components/NavIcon.vue'
+import GlobalNav from '~/components/GlobalNav.vue'
+
+export default {
+  components: {
+    NavIcon,
+    GlobalNav
+  },
+  data() {
+    return {
+      navShow: false,
+    }
+  },
+  computed: {
+    isActive() {
+      return this.navShow ? 'nav-show' : ''
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .header {
@@ -36,9 +58,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mq(1200px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   @include mq {
     justify-content: flex-start;
-    margin-left: 20px;
   }
 }
 .title {
@@ -50,28 +75,9 @@
     margin: 0;
   }
 }
-img {
-  width: 50px;
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-  @include mq {
-    position: static;
-    width: 40px;
+/deep/ .nav {
+  &.nav-show {
+    display: block;
   }
 }
 </style>
-
-
-<script>
-import GlobalNav from '~/components/GlobalNav.vue'
-import NavIcon from '~/components/NavIcon.vue'
-
-export default {
-  components: {
-    GlobalNav,
-    NavIcon
-  }
-}
-</script>
