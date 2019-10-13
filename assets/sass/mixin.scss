@@ -1,4 +1,4 @@
-@mixin mq($width: 880px) {
+@mixin mq($width: 425px) {
   @media screen and (max-width: $width) {
     @content;
   }
