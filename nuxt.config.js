@@ -25,6 +25,23 @@ module.exports = {
       '@/assets/sass/variable.scss',
       '@/assets/sass/mixin.scss',
     ]],
+    ['nuxt-fontawesome', {
+      imports: [
+        {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: ['far']
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        },
+      ]
+    }],
+    'vue-scrollto/nuxt'
   ],
   build: {
     /*
@@ -40,6 +57,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    '~plugins/vue-scrollto'
+  ]
 }
 

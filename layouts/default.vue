@@ -38,7 +38,9 @@ dt {
   font-size: 1.8rem;
 }
 dd,
-p {
+p,
+li,
+a {
   font-size: 1.5rem;
 }
 
