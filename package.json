@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "whyk portfolio site",
+  "description": "WhyK Portfolio Site",
   "author": "WhyK",
   "private": true,
   "scripts": {
@@ -31,19 +31,21 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.6.2",
-    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/stylelint-module": "^3.1.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "husky": "^2.6.0",
-    "lint-staged": "^8.2.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.16.4",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
     "stylelint": "^10.1.0",
     "stylelint-config-recess-order": "^2.0.4",
     "stylelint-config-standard": "^20.0.0"

@@ -6,7 +6,7 @@
         portfolio
       </h1>
       <h2 class="subtitle">
-        whyk portfolio site
+        WhyK Portfolio Site
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
@@ -24,14 +24,15 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Logo from '~/components/Logo.vue'
 
-export default {
+export default Vue.extend({
   components: {
     Logo
   }
-}
+})
 </script>
 
 <style>
