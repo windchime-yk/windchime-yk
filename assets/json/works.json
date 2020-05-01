@@ -1,0 +1,64 @@
+{
+  "works": [
+    {
+      "name": "novel-support.js",
+      "description": "小説投稿サイトのルビ短縮記法などを他のWebサイト上で再現するためのパッケージ",
+      "skill": [
+        {
+          "label": "TypeScript",
+          "color": "#0377C7"
+        }
+      ],
+      "github": "https://github.com/windchime-yk/novel-support.js"
+    },
+    {
+      "name": "qr-code-generater",
+      "description": "簡単なQRコード生成ページ",
+      "skill": [
+        {
+          "label": "Vue",
+          "color": "#3EB37F"
+        }
+      ],
+      "github": "https://github.com/windchime-yk/qr-code-generater"
+    },
+    {
+      "name": "simple-quiz",
+      "description": "勉強会で作成したシンプルなクイズサイト。他の人がクイズ作成できるよう拡張予定",
+      "skill": [
+        {
+          "label": "Vue",
+          "color": "#3EB37F"
+        },
+        {
+          "label": "Sass",
+          "color": "#C76496"
+        }
+      ],
+      "github": "https://github.com/windchime-yk/simple-quiz"
+    },
+    {
+      "name": "portfolio",
+      "description": "今見ているWebサイト",
+      "skill": [
+        {
+          "label": "NuxtJS",
+          "color": "#2F475B"
+        },
+        {
+          "label": "Sass",
+          "color": "#C76496"
+        },
+        {
+          "label": "TypeScript",
+          "color": "#0377C7"
+        },
+        {
+          "label": "microCMS",
+          "color": "#2B2C30"
+        }
+      ],
+      "github": "https://github.com/windchime-yk/portfolio"
+    }
+  ]
+}

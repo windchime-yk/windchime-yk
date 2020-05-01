@@ -1,69 +1,56 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        WhyK Portfolio Site
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <w-header />
+    <first-view />
+    <main id="main" class="main">
+      <about-contents />
+      <skill-contents />
+      <works-contents />
+      <blog-contents />
+    </main>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+import WHeader from '~/components/WHeader.vue'
+import FirstView from '~/components/FirstView.vue'
+import AboutContents from '~/components/contents/AboutContents.vue'
+import SkillContents from '~/components/contents/SkillContents.vue'
+import WorksContents from '~/components/contents/WorksContents.vue'
+import BlogContents from '~/components/contents/BlogContents.vue'
 
 export default Vue.extend({
   components: {
-    Logo
+    WHeader,
+    FirstView,
+    AboutContents,
+    SkillContents,
+    WorksContents,
+    BlogContents
   }
 })
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
   margin: 0 auto;
-  text-align: center;
 }
-
-.title {
-  display: block;
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 100px;
-  font-weight: 300;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  padding-bottom: 15px;
-  font-size: 42px;
-  font-weight: 300;
-  color: #526488;
-  word-spacing: 5px;
-}
-
-.links {
-  padding-top: 15px;
+.main {
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 50px + $header-height;
+  margin-top: -$header-height;
+  @include mq('tb') {
+    width: 90%;
+    padding-top: 50px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 </style>
