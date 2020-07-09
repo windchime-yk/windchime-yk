@@ -11,8 +11,8 @@
             :style="[
               {
                 'background-color': item.color,
-                width: `${100 / work.skill.length}%`
-              }
+                width: `${100 / work.skill.length}%`,
+              },
             ]"
           />
         </div>
@@ -53,9 +53,9 @@ import { works } from '~/assets/json/works.json'
 export default Vue.extend({
   data() {
     return {
-      works
+      works,
     }
-  }
+  },
 })
 </script>
 
@@ -74,8 +74,8 @@ export default Vue.extend({
   margin-left: 3%;
   overflow: hidden;
   border-radius: 3px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
   &:first-of-type {
     margin-left: 0;
   }

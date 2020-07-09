@@ -21,7 +21,7 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'FirstView'
+  name: 'FirstView',
 })
 </script>
 
@@ -55,7 +55,7 @@ export default Vue.extend({
 .first-view__text {
   display: block;
   overflow: hidden;
-  font-family: 'Fira Code';
+  font-family: 'Fira Code', monospace;
   white-space: nowrap;
   border-right: 2px solid #fff;
   animation: typing 2s steps(14), caret 1s steps(1) 2s infinite;

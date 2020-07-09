@@ -35,26 +35,26 @@ export default Vue.extend({
     const { contents } = await app.$axios.$get(
       'https://whyk-blog.microcms.io/api/v1/contents',
       {
-        headers: { 'X-API-KEY': process.env.API_KEY }
+        headers: { 'X-API-KEY': process.env.API_KEY },
       }
     )
     return {
-      contents
+      contents,
     }
   },
   data() {
     return {
-      contents: []
+      contents: [],
     }
-  }
+  },
 })
 </script>
 
 <style lang="scss" scoped>
 .article {
   border-radius: 3px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .article__empty {
   padding: 50px 20px;

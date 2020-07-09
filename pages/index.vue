@@ -27,8 +27,8 @@ export default Vue.extend({
     AboutContents,
     SkillContents,
     WorksContents,
-    BlogContents
-  }
+    BlogContents,
+  },
 })
 </script>
 

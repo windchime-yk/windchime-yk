@@ -10,17 +10,17 @@ export default Vue.extend({
   props: {
     chartData: {
       type: Object as PropType<Chart.ChartData>,
-      default: () => []
+      default: () => [],
     },
     options: {
       type: Object as PropType<Chart.ChartOptions>,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   mounted() {
     // TODO: ts-ignore使わない方法を探す
     // @ts-ignore
     this.renderChart(this.chartData, this.options)
-  }
+  },
 })
 </script>

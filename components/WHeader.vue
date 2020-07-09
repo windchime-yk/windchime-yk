@@ -32,19 +32,19 @@ import HeaderIcon from '~/components/HeaderIcon.vue'
 export default Vue.extend({
   name: 'WHeader',
   components: {
-    HeaderIcon
+    HeaderIcon,
   },
   data() {
     return {
       isExpanded: false,
-      items: ['about', 'skill', 'works', 'blog']
+      items: ['about', 'skill', 'works', 'blog'],
     }
   },
   methods: {
     expandedNav() {
       this.isExpanded = !this.isExpanded
-    }
-  }
+    },
+  },
 })
 </script>
 

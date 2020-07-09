@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt />
+    <Nuxt />
   </div>
 </template>
 
@@ -34,8 +34,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }

@@ -17,7 +17,7 @@ interface Skill {
 
 export default Vue.extend({
   components: {
-    RadarChart
+    RadarChart,
   },
   data() {
     return {
@@ -25,17 +25,17 @@ export default Vue.extend({
       options: {
         responsive: true,
         legend: {
-          display: false
+          display: false,
         },
         scale: {
           angleLines: {
-            display: false
+            display: false,
           },
           ticks: {
-            suggestedMin: 0
-          }
-        }
-      }
+            suggestedMin: 0,
+          },
+        },
+      },
     }
   },
   computed: {
@@ -47,16 +47,16 @@ export default Vue.extend({
           {
             backgroundColor: 'rgba(31, 46, 85, .4)',
             // @ts-ignore
-            data: this.extractSkillData('percentage')
-          }
-        ]
+            data: this.extractSkillData('percentage'),
+          },
+        ],
       }
-    }
+    },
   },
   methods: {
     extractSkillData(key: keyof Skill) {
       return skill.map((val) => val[key])
-    }
-  }
+    },
+  },
 })
 </script>
