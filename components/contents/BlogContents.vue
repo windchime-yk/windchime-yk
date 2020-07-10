@@ -35,7 +35,7 @@ export default Vue.extend({
     const { contents } = await app.$axios.$get(
       'https://whyk-blog.microcms.io/api/v1/contents',
       {
-        headers: { 'X-API-KEY': process.env.API_KEY },
+        headers: { 'X-API-KEY': process.env.CMS_API_KEY },
       }
     )
     return {
