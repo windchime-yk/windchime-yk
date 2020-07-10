@@ -13,23 +13,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import WHeader from '~/components/WHeader.vue'
-import FirstView from '~/components/FirstView.vue'
-import AboutContents from '~/components/contents/AboutContents.vue'
-import SkillContents from '~/components/contents/SkillContents.vue'
-import WorksContents from '~/components/contents/WorksContents.vue'
-import BlogContents from '~/components/contents/BlogContents.vue'
 
-export default Vue.extend({
-  components: {
-    WHeader,
-    FirstView,
-    AboutContents,
-    SkillContents,
-    WorksContents,
-    BlogContents,
-  },
-})
+export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
