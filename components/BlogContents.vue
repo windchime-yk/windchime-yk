@@ -16,9 +16,9 @@
           <dd class="article__description">{{ content.description }}</dd>
         </dl>
         <div class="article__btn">
-          <a class="article__link" :href="`blog/${content.slug}/`">
+          <nuxt-link class="article__link" :to="`blog/${content.slug}/`">
             詳細を読む
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>
