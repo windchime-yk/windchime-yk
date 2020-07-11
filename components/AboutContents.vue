@@ -12,23 +12,29 @@
       <div class="introduction__body">
         <dl>
           <dt class="introduction__title">
-            WhyK
-            <a
-              class="introduction__icon--twitter"
-              href="https://twitter.com/windchime_yk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <font-awesome-icon :icon="['fab', 'twitter']" />
-            </a>
-            <a
-              class="introduction__icon--github"
-              href="https://github.com/windchime-yk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <font-awesome-icon :icon="['fab', 'github']" />
-            </a>
+            <span class="introduction__name">WhyK</span>
+            <ul class="introduction-link">
+              <li class="introduction-link__item">
+                <a
+                  class="introduction__icon introduction__icon--twitter"
+                  href="https://twitter.com/windchime_yk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <font-awesome-icon class="fa-fw" :icon="['fab', 'twitter']" />
+                </a>
+              </li>
+              <li class="introduction-link__item">
+                <a
+                  class="introduction__icon introduction__icon--github"
+                  href="https://github.com/windchime-yk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <font-awesome-icon class="fa-fw" :icon="['fab', 'github']" />
+                </a>
+              </li>
+            </ul>
           </dt>
           <dd class="introduction__description">
             <p class="introduction__paragraph">
@@ -81,19 +87,38 @@ export default Vue.extend({})
   }
 }
 .introduction__title {
+  display: flex;
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: bold;
   @include mq() {
+    flex-direction: column;
     text-align: center;
   }
 }
+.introduction-link {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-left: 5px;
+  list-style: none;
+  @include mq() {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
 .introduction__icon {
+  @include mq() {
+    font-size: 2.5rem;
+  }
   &--twitter {
     color: #1c91da;
   }
   &--github {
     color: #24292e;
+    @include mq() {
+      margin-left: 5px;
+    }
   }
 }
 .introduction__description {
