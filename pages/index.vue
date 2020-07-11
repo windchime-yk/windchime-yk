@@ -6,7 +6,7 @@
       <about-contents />
       <skill-contents />
       <works-contents />
-      <blog-contents />
+      <blog-contents :contents="contents" />
     </main>
   </div>
 </template>
@@ -14,7 +14,26 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  async asyncData({ app }) {
+    const { contents } = await app.$axios.$get(
+      'https://whyk-blog.microcms.io/api/v1/contents',
+      {
+        headers: {
+          'X-API-KEY': process.env.CMS_API_KEY,
+        },
+      }
+    )
+    return {
+      contents,
+    }
+  },
+  data() {
+    return {
+      contents: [],
+    }
+  },
+})
 </script>
 
 <style lang="scss" scoped>
