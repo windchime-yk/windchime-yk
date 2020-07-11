@@ -11,17 +11,34 @@
       </div>
       <div class="introduction__body">
         <dl>
-          <dt class="introduction__title">WhyK</dt>
+          <dt class="introduction__title">
+            WhyK
+            <a
+              class="introduction__icon--twitter"
+              href="https://twitter.com/windchime_yk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <font-awesome-icon :icon="['fab', 'twitter']" />
+            </a>
+            <a
+              class="introduction__icon--github"
+              href="https://github.com/windchime-yk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <font-awesome-icon :icon="['fab', 'github']" />
+            </a>
+          </dt>
           <dd class="introduction__description">
             <p class="introduction__paragraph">
-              フロントエンドエンジニア。<br />業務では、主にVueとNuxtJSでの開発を行なう。
+              フロントエンドエンジニア。TSer。
             </p>
             <p class="introduction__paragraph">
-              Vue周りのフレームワークとNode.jsが好きで、それらを活用したプロダクト開発を模索中。<br />最近は、Node.jsのExpressを使ってJSON
-              APIを試作してみたりしてる。<br />あと、玄米茶とドクペが好き。
+              Vue周りのフレームワークとサーバーサイドJavaScriptが好き。<br />それらを活用したプロダクト開発を模索している。<br />最近はDenoがマイブーム。
             </p>
             <p class="introduction__paragraph">
-              一人暮らしをした暁には、テンジクネズミを飼いたいと思っている。
+              在宅勤務に慣れてしまったので、出社してたときの感覚を忘れてしまった。
             </p>
           </dd>
         </dl>
@@ -69,6 +86,14 @@ export default Vue.extend({})
   font-weight: bold;
   @include mq() {
     text-align: center;
+  }
+}
+.introduction__icon {
+  &--twitter {
+    color: #1c91da;
+  }
+  &--github {
+    color: #24292e;
   }
 }
 .introduction__description {

@@ -85,6 +85,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    'nuxt-fontawesome',
   ],
   styleResources: {
     scss: ['@/assets/scss/_variable.scss', '@/assets/scss/_mixins.scss'],
@@ -94,6 +95,14 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab'],
+      },
+    ],
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
