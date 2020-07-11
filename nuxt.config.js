@@ -17,14 +17,15 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: '<whyk-dev/> - WhyK Portfolio Site',
+    titleTemplate: (title) =>
+      title ? `${title} | WhyK Devlog` : '<whyk-dev/> - WhyK Portfolio Site',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: 'WhyKのポートフォリオサイトです',
       },
       {
         hid: 'og:site_name',
@@ -41,7 +42,7 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: process.env.npm_package_description || '',
+        content: 'WhyKのポートフォリオサイトです',
       },
       { hid: 'og:image', property: 'og:image', content: '/ogp-image.png' },
       { name: 'twitter:card', content: 'summary_large_image' },

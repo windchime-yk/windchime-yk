@@ -27,5 +27,10 @@ export default Vue.extend({
       contents: [],
     }
   },
+  head() {
+    return {
+      title: this.contents[0].title,
+    }
+  },
 })
 </script>
