@@ -8,6 +8,14 @@
 <script lang="ts">
 import Vue from 'vue'
 
+interface Contents {
+  title: string
+}
+
+interface Data {
+  contents: Contents[]
+}
+
 export default Vue.extend({
   async asyncData({ app, params }) {
     const { contents } = await app.$axios.$get(
@@ -22,13 +30,14 @@ export default Vue.extend({
       contents,
     }
   },
-  data() {
+  data(): Data {
     return {
       contents: [],
     }
   },
   head() {
     return {
+      // @ts-ignore
       title: this.contents[0].title,
     }
   },
