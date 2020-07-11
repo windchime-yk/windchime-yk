@@ -1,8 +1,4 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "WhyK Portfolio Site",
-  "author": "WhyK",
   "private": true,
   "scripts": {
     "dev": "nuxt",
