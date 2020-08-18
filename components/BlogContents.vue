@@ -43,15 +43,13 @@ export default Vue.extend({
   font-size: 2rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  @include boxShadow;
 }
 .article__item {
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 3px;
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  @include boxShadow;
 }
 .article__title {
   font-size: 2rem;

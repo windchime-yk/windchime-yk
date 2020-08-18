@@ -40,6 +40,11 @@ html {
   margin: 0;
 }
 
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 button {
   padding: 0;
   cursor: pointer;

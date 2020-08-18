@@ -1,14 +1,30 @@
 <template>
   <header class="header">
     <h1 class="header__title">
-      <img
-        class="header__logo"
-        src="~/assets/images/site-logo.svg"
-        alt="whyk-dev"
-      />
+      <a v-if="blog" href="/blog">
+        <img
+          class="header__logo"
+          src="~/assets/images/blog-logo.svg"
+          alt="whyk-dev"
+        />
+      </a>
+      <a v-else href="/">
+        <img
+          class="header__logo"
+          src="~/assets/images/site-logo.svg"
+          alt="whyk-dev"
+        />
+      </a>
     </h1>
-    <nav :class="['nav', { 'is-expanded': isExpanded }]">
-      <ul class="nav__list">
+    <nav v-show="blog" :class="['nav', { 'is-expanded': isExpanded }]">
+      <ul v-if="blog" class="nav__list">
+        <li v-for="(item, index) in blogItems" :key="index" class="nav__item">
+          <a class="nav__anchor" :href="`/blog/${item}`" @click="expandedNav()">
+            {{ item }}
+          </a>
+        </li>
+      </ul>
+      <ul v-else class="nav__list">
         <li v-for="(item, index) in items" :key="index" class="nav__item">
           <a class="nav__anchor" :href="`#${item}`" @click="expandedNav()">{{
             item
@@ -17,6 +33,7 @@
       </ul>
     </nav>
     <button
+      v-show="blog"
       :class="['header__btn', { 'is-expanded': isExpanded }]"
       @click="expandedNav()"
     >
@@ -34,10 +51,17 @@ export default Vue.extend({
   components: {
     HeaderIcon,
   },
+  props: {
+    blog: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       isExpanded: false,
       items: ['about', 'skill', 'works', 'blog'],
+      blogItems: ['category', 'tags', 'posts'],
     }
   },
   methods: {
