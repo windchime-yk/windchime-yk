@@ -16,7 +16,7 @@
         />
       </a>
     </h1>
-    <nav v-show="blog" :class="['nav', { 'is-expanded': isExpanded }]">
+    <nav v-show="!blog" :class="['nav', { 'is-expanded': isExpanded }]">
       <ul v-if="blog" class="nav__list">
         <li v-for="(item, index) in blogItems" :key="index" class="nav__item">
           <a class="nav__anchor" :href="`/blog/${item}`" @click="expandedNav()">
@@ -33,7 +33,7 @@
       </ul>
     </nav>
     <button
-      v-show="blog"
+      v-show="!blog"
       :class="['header__btn', { 'is-expanded': isExpanded }]"
       @click="expandedNav()"
     >
@@ -94,7 +94,7 @@ export default Vue.extend({
 .nav {
   @include mq('tb') {
     position: fixed;
-    bottom: -160px;
+    bottom: -190px;
     left: 0;
     width: 100%;
     background-color: $main-color;
@@ -138,7 +138,7 @@ export default Vue.extend({
   display: none;
   @include mq('tb') {
     position: fixed;
-    bottom: 20px;
+    bottom: 5px;
     left: 50%;
     display: block;
     padding: 20px;
@@ -148,7 +148,7 @@ export default Vue.extend({
     transition: bottom 0.5s ease-in;
     transform: translateX(-50%);
     &.is-expanded {
-      bottom: 180px;
+      bottom: 195px;
     }
   }
 }

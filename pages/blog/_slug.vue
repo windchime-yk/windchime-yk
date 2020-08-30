@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <w-header />
+    <w-header blog />
     <main class="main">
       <section class="blog">
         <h2 class="blog__title">{{ contents[0].title }}</h2>
