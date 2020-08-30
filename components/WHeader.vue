@@ -1,14 +1,7 @@
 <template>
   <header class="header">
     <h1 class="header__title">
-      <a v-if="blog" href="/blog">
-        <img
-          class="header__logo"
-          src="~/assets/images/blog-logo.svg"
-          alt="whyk-dev"
-        />
-      </a>
-      <a v-else href="/">
+      <a href="/">
         <img
           class="header__logo"
           src="~/assets/images/site-logo.svg"

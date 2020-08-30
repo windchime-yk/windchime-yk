@@ -40,7 +40,7 @@ html {
   margin: 0;
 }
 
-ul {
+.blog__body ul {
   margin-top: 1em;
   margin-bottom: 1em;
 }
