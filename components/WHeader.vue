@@ -87,7 +87,7 @@ export default Vue.extend({
 .nav {
   @include mq('tb') {
     position: fixed;
-    bottom: -190px;
+    bottom: -170px;
     left: 0;
     width: 100%;
     background-color: $main-color;
@@ -141,7 +141,7 @@ export default Vue.extend({
     transition: bottom 0.5s ease-in;
     transform: translateX(-50%);
     &.is-expanded {
-      bottom: 195px;
+      bottom: 175px;
     }
   }
 }
