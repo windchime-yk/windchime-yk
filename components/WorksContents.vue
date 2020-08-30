@@ -88,6 +88,15 @@ export default Vue.extend({
       margin-bottom: 20px;
     }
   }
+  @include mq('sp') {
+    width: 100%;
+    &:nth-of-type(odd),
+    &:nth-of-type(even) {
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-left: auto;
+    }
+  }
 }
 .product__percentage {
   display: flex;
