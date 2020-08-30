@@ -8,9 +8,6 @@
         <span class="first-view__text--third">Best</span>
       </div>
     </div>
-    <span class="first-view__sub">
-      シンプルで読みやすく、当たり前を当たり前にできるコーディングを目指します
-    </span>
 
     <a class="first-view__arrow" href="#main">
       <img src="~/assets/images/arrow.svg" alt="" />
@@ -145,16 +142,6 @@ export default Vue.extend({
 @keyframes caret {
   50% {
     border-right-color: transparent;
-  }
-}
-
-.first-view__sub {
-  font-size: 1.8rem;
-  @include mq('lt') {
-    font-size: 1.5rem;
-  }
-  @include mq('tb') {
-    display: none;
   }
 }
 
