@@ -4,6 +4,7 @@ I'm learning English little by little, but for now I'm relying on DeepL translat
 
 ## Link
 - Qiita(Japanese): [@windchime-yk](https://qiita.com/windchime-yk)
+- Blog(Japanese): [<whyk-log \/>](https://blog.whyk.dev/)
 
 ## Status
 [![WhyK's GitHub Stats](https://github-readme-stats.vercel.app/api?username=windchime-yk&show_icons=true&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
