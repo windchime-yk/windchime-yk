@@ -27,7 +27,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '<whyk-dev\/> - WhyK Portfolio Site',
+        content: '&lt;whyk-dev/&gt; - WhyK Portfolio Site',
       },
       {
         hid: 'og:description',
@@ -37,6 +37,7 @@ const config: NuxtConfig = {
       { hid: 'og:image', property: 'og:image', content: '/ogp-image.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@windchime-yk' },
+      { name: 'twitter:image', content: '/ogp-image.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/site-icon.svg' },
