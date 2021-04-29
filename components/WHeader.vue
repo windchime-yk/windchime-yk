@@ -9,24 +9,35 @@
         />
       </a>
     </h1>
-    <nav v-show="!blog" :class="['nav', { 'is-expanded': isExpanded }]">
-      <ul v-if="blog" class="nav__list">
-        <li v-for="(item, index) in blogItems" :key="index" class="nav__item">
-          <a class="nav__anchor" :href="`/blog/${item}`" @click="expandedNav()">
+    <nav :class="['nav', { 'is-expanded': isExpanded }]">
+      <ul class="nav__list">
+        <li v-for="(item, index) in items" :key="index" class="nav__item">
+          <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+          <a
+            v-if="item === 'blog'"
+            class="nav__anchor"
+            href="https://blog.whyk.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ item }}
+            <font-awesome-icon
+              class="fa-xs"
+              :icon="['fas', 'external-link-alt']"
+            />
+          </a>
+          <a
+            v-else
+            class="nav__anchor"
+            :href="`#${item}`"
+            @click="expandedNav()"
+          >
             {{ item }}
           </a>
         </li>
       </ul>
-      <ul v-else class="nav__list">
-        <li v-for="(item, index) in items" :key="index" class="nav__item">
-          <a class="nav__anchor" :href="`#${item}`" @click="expandedNav()">{{
-            item
-          }}</a>
-        </li>
-      </ul>
     </nav>
     <button
-      v-show="!blog"
       :class="['header__btn', { 'is-expanded': isExpanded }]"
       @click="expandedNav()"
     >
@@ -44,17 +55,10 @@ export default Vue.extend({
   components: {
     HeaderIcon,
   },
-  props: {
-    blog: {
-      type: Boolean,
-      default: false,
-    },
-  },
   data() {
     return {
       isExpanded: false,
       items: ['about', 'skill', 'works', 'blog'],
-      blogItems: ['category', 'tags', 'posts'],
     }
   },
   methods: {

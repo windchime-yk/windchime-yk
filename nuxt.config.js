@@ -17,8 +17,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    titleTemplate: (title) =>
-      title ? `${title} | WhyK Devlog` : '<whyk-dev/> - WhyK Portfolio Site',
+    title: '<whyk-dev/> - WhyK Portfolio Site',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
