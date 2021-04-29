@@ -38,11 +38,6 @@ const config: NuxtConfig = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/site-icon.svg' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap',
-      },
     ],
   },
   components: true,
@@ -66,6 +61,16 @@ const config: NuxtConfig = {
         icons: ['fas'],
       },
     ],
+  },
+  googleFonts: {
+    families: {
+      'Fira+Code': {
+        wght: [700],
+      },
+    },
+    display: 'swap',
+    download: true,
+    inject: true,
   },
   build: {
     loaders: {
