@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-useless-escape */
 import { NuxtConfig } from '@nuxt/types'
 import Sass from 'sass'
 import Fiber from 'fibers'
@@ -25,7 +27,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '<whyk-dev/> - WhyK Portfolio Site',
+        content: '<whyk-dev\/> - WhyK Portfolio Site',
       },
       {
         hid: 'og:description',
