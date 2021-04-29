@@ -48,6 +48,10 @@
       "description": "Deno向けのJSON形式DBモジュール",
       "skill": [
         {
+          "label": "Deno",
+          "color": "#222323"
+        },
+        {
           "label": "TypeScript",
           "color": "#0377C7"
         }
