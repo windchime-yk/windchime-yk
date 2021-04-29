@@ -47,24 +47,26 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent, ref } from '@nuxtjs/composition-api'
 import HeaderIcon from '~/components/HeaderIcon.vue'
 
-export default Vue.extend({
-  name: 'WHeader',
+export default defineComponent({
   components: {
     HeaderIcon,
   },
-  data() {
-    return {
-      isExpanded: false,
-      items: ['about', 'skill', 'works', 'blog'],
+  setup() {
+    const isExpanded = ref(false)
+    const items = ref(['about', 'skill', 'works', 'blog'])
+
+    const expandedNav = () => {
+      isExpanded.value = !isExpanded.value
     }
-  },
-  methods: {
-    expandedNav() {
-      this.isExpanded = !this.isExpanded
-    },
+
+    return {
+      isExpanded,
+      items,
+      expandedNav,
+    }
   },
 })
 </script>

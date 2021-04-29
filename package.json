@@ -27,6 +27,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@nuxt/typescript-runtime": "^0.4.10",
     "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/composition-api": "^0.22.4",
     "nuxt": "^2.15.4",
     "nuxt-fontawesome": "^0.4.0"
   },

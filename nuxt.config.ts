@@ -46,7 +46,11 @@ const config: NuxtConfig = {
     ],
   },
   components: true,
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/composition-api',
+  ],
   modules: ['@nuxtjs/axios', '@nuxtjs/style-resources', 'nuxt-fontawesome'],
   styleResources: {
     scss: ['@/assets/scss/_variable.scss', '@/assets/scss/_mixins.scss'],

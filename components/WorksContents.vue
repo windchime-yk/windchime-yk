@@ -47,11 +47,11 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from '@nuxtjs/composition-api'
 import { works } from '~/assets/json/works.json'
 
-export default Vue.extend({
-  data() {
+export default defineComponent({
+  setup() {
     return {
       works,
     }
