@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <w-header />
-    <first-view />
     <main id="main" class="main">
       <about-contents />
       <skill-contents />
@@ -27,7 +26,7 @@ export default Vue.extend({})
 .main {
   width: 100%;
   max-width: 1000px;
-  padding-top: 50px + $header-height;
+  padding-top: 100px + $header-height;
   margin-top: -$header-height;
   @include mq('tb') {
     width: 90%;
