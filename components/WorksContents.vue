@@ -30,7 +30,7 @@
           </li>
         </ul>
         <ul class="product__action">
-          <li class="product__btn">
+          <li class="product__btn product__btn--github">
             <a class="product__link" :href="work.github" target="_blank"
               >GitHubを開く</a
             >
@@ -63,6 +63,7 @@ export default Vue.extend({
 .product {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .product__item {
   display: flex;
@@ -146,6 +147,11 @@ export default Vue.extend({
 .product__action {
   padding-left: 0;
   list-style: none;
+}
+.product__btn {
+  &:not(&--github) {
+    margin-top: 5px;
+  }
 }
 .product__link {
   display: block;
