@@ -1,0 +1,15 @@
+// カラーテーマ（default.vueの:rootでライト/ダークのCSS変数を指定）
+$base-color: var(--base-color);
+$main-color: var(--main-color);
+$accent-color: var(--accent-color);
+$main-text-color:  var(--accent-color);
+$sub-text-color: var(--base-color);
+
+$breakpoints: (
+  'sp': 'screen and (max-width: 425px)',
+  'tb': 'screen and (max-width: 768px)',
+  'lt': 'screen and (max-width: 950px)'
+);
+
+// ヘッダー
+$header-height: 70px;
