@@ -41,10 +41,10 @@
               フロントエンドエンジニア。TSer。
             </p>
             <p class="introduction__paragraph">
-              Vue周りのフレームワークとサーバーサイドJavaScriptが好き。<br />それらを活用したプロダクト開発を模索している。<br />最近はDenoがマイブーム。
+              VueとDenoが好き。<br />それらを活用したプロダクト開発を模索している。
             </p>
             <p class="introduction__paragraph">
-              在宅勤務に慣れてしまったので、出社してたときの感覚を忘れてしまった。
+              在宅勤務が快適すぎて離れられない。
             </p>
           </dd>
         </dl>
