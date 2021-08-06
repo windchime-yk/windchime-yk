@@ -6,6 +6,7 @@ I'm learning English little by little, but for now I'm relying on DeepL translat
 - Qiita(Japanese): [@windchime-yk](https://qiita.com/windchime-yk)
 - Zenn(Japanese): [@windchime-yk](https://zenn.dev/windchime_yk)
 - Blog(Japanese): [<whyk-log \/>](https://blog.whyk.dev/)
+- Question: [GitHub Discussions](https://github.com/windchime-yk/windchime-yk/discussions/categories/q-a)
 
 ## Status
 [![WhyK's GitHub Stats](https://github-readme-stats.vercel.app/api?username=windchime-yk&show_icons=true&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
