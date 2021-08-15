@@ -41,10 +41,10 @@
               フロントエンドエンジニア。TSer。
             </p>
             <p class="introduction__paragraph">
-              VueとDenoが好き。<br />それらを活用したプロダクト開発を模索している。
+              TypeScriptとJSXとDenoと玄米茶が好き。<br />静的型付けは救世主。
             </p>
             <p class="introduction__paragraph">
-              在宅勤務が快適すぎて離れられない。
+              アニメ映画のWebサイトに携わってエンドロールに載るのが目標。˝<br />一生を在宅勤務で過ごしたい。
             </p>
           </dd>
         </dl>
