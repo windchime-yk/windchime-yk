@@ -14,10 +14,18 @@ jobs:
       - name: Setup node env
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Install dependencies
-        run: yarn
-      - name: Run formatter
-        run: yarn fmtcheck
-      - name: Run linter
-        run: yarn lint
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.29.3
+          run_install: true
+      - name: Run type check
+        run: pnpm check
+      - name: Run formatter & linter
+        run: pnpm lint
+      - name: Run tests
+        run: |
+          pnpm test:unit
+          pnpm playwright install
+          pnpm test:integration

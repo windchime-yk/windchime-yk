@@ -1,10 +1,8 @@
 {
   /* Linter and Formatter */
   // linter
-  "eslint.packageManager": "yarn", // ESLintライブラリ解決時に使うパッケージマネージャ
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true, // eslint
-    "source.fixAll.stylelint": true // Stylelint
+    "source.fixAll.eslint": true // eslint
   },
   // formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettier
