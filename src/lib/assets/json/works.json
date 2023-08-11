@@ -3,7 +3,7 @@
     "title": "ポートフォリオサイト",
     "description": "本サイト。",
     "repository": "windchime-yk/portfolio",
-    "image": "https://opengraph.githubassets.com/41287e75d64ff91544e898142cb91da6db50c62e9c8a9c8d8ddf0f0b084abebd/windchime-yk/portfolio",
+    "image": "https://opengraph.githubassets.com/c5cdf498a961d985c7d04ebf8387e59d1317181b4917d6d840029ed5941df62e/windchime-yk/portfolio",
     "technologies": ["Node.js", "TypeScript", "SvelteKit", "Tailwind CSS", "Flowbite", "Cloudflare"]
   },
   {
