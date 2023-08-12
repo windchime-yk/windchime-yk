@@ -2,36 +2,57 @@
   {
     "title": "サークル公式サイト",
     "description": "サークルの頒布物や活動実績などを掲載",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": ["Node.js", "TypeScript", "Remix", "Tailwind CSS", "Cloudflare"]
   },
   {
     "title": "企画公式サイト",
     "description": "サークル主宰が原作原案のシェアード・ワールド企画の概要説明や参加作品案内を掲載",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": ["Node.js", "TypeScript", "Remix", "Tailwind CSS", "Cloudflare"]
   },
   {
     "title": "企画ツール群",
     "description": "シェアード・ワールド企画内の暦と西暦の変換や誤字検知など、企画特有の問題を解決するツールが複数利用可能",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": ["Node.js", "TypeScript", "Remix", "Tailwind CSS", "Cloudflare"]
   },
   {
     "title": "企画公式設定集",
     "description": "シェアード・ワールド企画の細かい設定などが閲覧可能",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": ["Node.js", "HonKit", "Cloudflare"]
   },
   {
     "title": "REST API",
     "description": "サークルのデータはこのREST API経由で各サイトに配信",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": ["Deno", "Hono", "Zod", "Deno Deploy"]
   },
   {
     "title": "画像サーバー",
     "description": "サークルの画像はこの画像サーバーから各サイトに配信",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": ["Node.js", "Hono", "Cloudflare R2", "Cloudflare"]
   },
   {
     "title": "コンテンツエディタ",
     "description": "非技術者である他サークルメンバー向けにREST APIや画像サーバーのGUI上での変更を提供",
+    "circle": true,
+    "repository": "",
+    "image": "",
     "technologies": [
       "Node.js",
       "TypeScript",
