@@ -3,28 +3,24 @@
     "title": "ポートフォリオサイト",
     "description": "本サイト。",
     "repository": "windchime-yk/portfolio",
-    "image": "https://opengraph.githubassets.com/c5cdf498a961d985c7d04ebf8387e59d1317181b4917d6d840029ed5941df62e/windchime-yk/portfolio",
     "technologies": ["Node.js", "TypeScript", "SvelteKit", "Tailwind CSS", "Flowbite", "Cloudflare"]
   },
   {
     "title": "QR Code Generator",
     "description": "自作のQRコード生成サーバーからQRコードを表示し、PNGかSVGで保存できるサービス。",
     "repository": "windchime-yk/qr-code-generater",
-    "image": "https://opengraph.githubassets.com/42b1636ed317a77f76799d9eecdc12194521dbb667553ed9d95a69d84bec2398/windchime-yk/qr-code-generater",
     "technologies": ["Node.js", "TypeScript", "SvelteKit", "Tailwind CSS", "Flowbite", "Cloudflare"]
   },
   {
     "title": "QR Server",
     "description": "QR Code Generatorで利用しているQRコード生成サーバー。",
     "repository": "windchime-yk/qr-server",
-    "image": "https://opengraph.githubassets.com/0b72383017dd59eaa24d96e85b9d3f3518aca40d37fbabfead4f2127355ca8bf/windchime-yk/qr-server",
     "technologies": ["Deno", "Hono", "node-qrcode", "Deno Deploy"]
   },
   {
     "title": "シネログ",
     "description": "個人的に映画館で観た映画を列挙するだけのサイト。",
     "repository": "windchime-yk/cinelog",
-    "image": "https://opengraph.githubassets.com/06f2b74f4052cb8b7940103299ae855221011611981ecadfa2e6cdcc932fb8ea/windchime-yk/cinelog",
     "technologies": [
       "Deno",
       "Fresh",
@@ -40,14 +36,12 @@
     "title": "Denoばた会議 Monthly レポート",
     "description": "月1回開催されるDenoばた会議 Monthlyの箇条書きレポート",
     "repository": "deno-ja/denobata-monthly-report",
-    "image": "https://opengraph.githubassets.com/aed55955703de56998de3851794d1630fe3a0189d79470b7d8c1e2540dd2f844/deno-ja/denobata-monthly-report",
     "technologies": ["Deno", "Diplodocus", "Deno Deploy"]
   },
   {
     "title": "BracesDB",
     "description": "JSON形式のDeno製DBモジュール。",
     "repository": "rwl-dev/bracesdb",
-    "image": "https://opengraph.githubassets.com/75d709ed592cf8d8a7470637142652a711548f52a4a64213a9160b7290c6da90/rwl-dev/bracesdb",
     "technologies": ["Deno"]
   }
 ]

@@ -33,7 +33,7 @@
       <li>
         <Card
           class="max-w-full"
-          img={work.image}
+          img={`https://opengraph.githubassets.com/1/${work.repository}`}
           href={`https://github.com/${work.repository}`}
           target="_blank"
         >
