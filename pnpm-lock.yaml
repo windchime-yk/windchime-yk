@@ -15,8 +15,8 @@ importers:
         specifier: ^1.8.1
         version: 1.8.1
       flowbite-svelte:
-        specifier: ^0.45.0
-        version: 0.45.1(svelte@4.2.15)
+        specifier: ^0.46.0
+        version: 0.46.1(svelte@4.2.15)
       tailwind-merge:
         specifier: ^1.14.0
         version: 1.14.0
@@ -811,11 +811,11 @@ packages:
   flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
 
-  flowbite-svelte@0.45.1:
-    resolution: {integrity: sha512-KMimns3ir0ONFUzQqSEtgG1bOdJK1sOCYPN+PpOxR75w456t6k2HYAcbn+fD/nVKbznq0oabD0vr1Errdefacg==}
+  flowbite-svelte@0.46.1:
+    resolution: {integrity: sha512-GMQP4Fxn4mYu12XTNRbOHMYMklbP29sKFZUZYekryxhWak2zbSlI1ozhBtnrD2WDbFBPqZ64IcyButOkYpz+WQ==}
     engines: {node: '>=18.0.0', pnpm: '>=8.0.0'}
     peerDependencies:
-      svelte: ^4.0.0
+      svelte: ^3.55.1 || ^4.0.0
 
   flowbite@1.8.1:
     resolution: {integrity: sha512-lXTcO8a6dRTPFpINyOLcATCN/pK1Of/jY4PryklPllAiqH64tSDUsOdQpar3TO59ZXWwugm2e92oaqwH6X90Xg==}
@@ -2503,7 +2503,7 @@ snapshots:
 
   flatted@3.3.1: {}
 
-  flowbite-svelte@0.45.1(svelte@4.2.15):
+  flowbite-svelte@0.46.1(svelte@4.2.15):
     dependencies:
       '@floating-ui/dom': 1.6.3
       apexcharts: 3.49.0
