@@ -2,7 +2,7 @@
   /* Linter and Formatter */
   // linter
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true // eslint
+    "source.fixAll.eslint": "explicit"
   },
   // formatter
   "editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトフォーマッターをPrettier
