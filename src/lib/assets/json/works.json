@@ -1,8 +1,8 @@
 [
   {
-    "title": "ポートフォリオサイト",
+    "title": "個人サイト",
     "description": "本サイト。",
-    "repository": "windchime-yk/portfolio",
+    "repository": "windchime-yk/windchime-yk",
     "technologies": ["Node.js", "TypeScript", "SvelteKit", "Tailwind CSS", "Flowbite", "Cloudflare"]
   },
   {
