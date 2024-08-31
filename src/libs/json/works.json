@@ -3,7 +3,15 @@
     "title": "個人サイト",
     "description": "本サイト。",
     "repository": "windchime-yk/windchime-yk",
-    "technologies": ["Node.js", "TypeScript", "SvelteKit", "Tailwind CSS", "Flowbite", "Cloudflare"]
+    "technologies": [
+      "Node.js",
+      "TypeScript",
+      "Astro",
+      "Svelte",
+      "Tailwind CSS",
+      "Flowbite",
+      "Cloudflare"
+    ]
   },
   {
     "title": "QR Code Generator",
@@ -28,7 +36,7 @@
       "Hono",
       "Drizzle ORM",
       "Zod",
-      "PlanetScale",
+      "TiDB Serverless",
       "Deno Deploy"
     ]
   },

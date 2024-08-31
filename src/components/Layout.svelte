@@ -8,7 +8,6 @@
     FooterLink,
     FooterLinkGroup
   } from 'flowbite-svelte';
-  import '../app.postcss';
 </script>
 
 <div class="min-h-screen grid grid-rows-[auto,1fr,auto]">
