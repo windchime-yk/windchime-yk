@@ -1,0 +1,29 @@
+---
+import Header from '../components/Header.svelte';
+import Footer from '../components/Footer.svelte';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/icon.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white dark:bg-gray-800">
+    <div class="min-h-screen grid grid-rows-[auto,1fr,auto]">
+      <Header />
+      <main class="md:max-w-[1000px] w-full px-5 lg:px-0 md:mx-auto"><slot /></main>
+      <Footer />
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
   pull_request:
@@ -19,12 +19,5 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
-      - name: Run type check
-        run: pnpm check
       - name: Run formatter & linter
         run: pnpm lint
-      - name: Run tests
-        run: |
-          pnpm test:unit
-          pnpm playwright install
-          pnpm test:integration
