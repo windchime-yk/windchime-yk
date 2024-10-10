@@ -11,9 +11,9 @@
     "format": "pnpm prettier --write && pnpm eslint --fix"
   },
   "volta": {
-    "node": "20.17.0"
+    "node": "20.18.0"
   },
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.12.0",
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/svelte": "^5.7.0",
