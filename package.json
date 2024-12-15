@@ -7,7 +7,7 @@
     "preview": "astro preview",
     "eslint": "eslint --flag unstable_ts_config .",
     "prettier": "prettier .",
-    "lint": "pnpm prettier && pnpm eslint",
+    "lint": "pnpm prettier --check && pnpm eslint",
     "format": "pnpm prettier --write && pnpm eslint --fix"
   },
   "volta": {
@@ -33,7 +33,7 @@
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^1.2.3",
-    "jiti": "^1.21.6",
+    "jiti": "^2.4.1",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^3.4.10"
