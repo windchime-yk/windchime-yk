@@ -8,7 +8,8 @@
     "eslint": "eslint --flag unstable_ts_config .",
     "prettier": "prettier .",
     "lint": "pnpm prettier --check && pnpm eslint",
-    "format": "pnpm prettier --write && pnpm eslint --fix"
+    "format": "pnpm prettier --write && pnpm eslint --fix",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "volta": {
     "node": "20.20.2"
@@ -36,6 +37,7 @@
     "jiti": "^2.4.1",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.10",
+    "wrangler": "^4.116.0"
   }
 }
