@@ -12,7 +12,7 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "volta": {
-    "node": "24.21.0"
+    "node": "24.22.0"
   },
   "packageManager": "pnpm@11.28.6",
   "dependencies": {
