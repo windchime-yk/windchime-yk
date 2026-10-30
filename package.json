@@ -14,7 +14,7 @@
   "volta": {
     "node": "24.21.0"
   },
-  "packageManager": "pnpm@11.28.6",
+  "packageManager": "pnpm@11.28.8",
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/svelte": "^5.7.0",
