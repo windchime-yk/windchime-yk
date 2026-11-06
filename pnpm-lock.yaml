@@ -47,7 +47,7 @@ importers:
         version: 8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       autoprefixer:
         specifier: ^10.4.20
-        version: 10.6.1(postcss@8.5.25)
+        version: 10.6.2(postcss@8.5.25)
       eslint:
         specifier: ^9.9.1
         version: 9.39.5(jiti@2.7.0)(supports-color@10.2.2)
@@ -1447,8 +1447,8 @@ packages:
     peerDependencies:
       '@astrojs/compiler': '>=0.27.0'
 
-  autoprefixer@10.6.1:
-    resolution: {integrity: sha512-cL1Qz6ADZhcEbny/8HPfe99J6HhNoYtpX2LFLIbhgGE7Q1hlQVkYFdetDN7Id3KiQxhDrHwzlHr/YQCnZ8+xSA==}
+  autoprefixer@10.6.2:
+    resolution: {integrity: sha512-VOw9/yGTGwPPgzFcODtcv6zhEPIeIWkRSe10L2ri2f5vZ7ID7lCt6jZzRF5/ubgOZ+szYydmEF5AYsA5jxX1tA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -3376,7 +3376,7 @@ snapshots:
   '@astrojs/tailwind@5.1.5(astro@4.16.19(rollup@4.62.3)(supports-color@10.2.2)(typescript@5.9.3))(tailwindcss@3.4.19(yaml@2.9.0))':
     dependencies:
       astro: 4.16.19(rollup@4.62.3)(supports-color@10.2.2)(typescript@5.9.3)
-      autoprefixer: 10.6.1(postcss@8.5.25)
+      autoprefixer: 10.6.2(postcss@8.5.25)
       postcss: 8.5.25
       postcss-load-config: 4.0.2(postcss@8.5.25)
       tailwindcss: 3.4.19(yaml@2.9.0)
@@ -4563,7 +4563,7 @@ snapshots:
       '@astrojs/compiler': 3.0.1
       synckit: 0.11.13
 
-  autoprefixer@10.6.1(postcss@8.5.25):
+  autoprefixer@10.6.2(postcss@8.5.25):
     dependencies:
       browserslist: 4.29.0
       caniuse-lite: 1.0.30001810
