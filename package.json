@@ -12,9 +12,9 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "volta": {
-    "node": "24.22.1"
+    "node": "24.22.2"
   },
-  "packageManager": "pnpm@11.28.8",
+  "packageManager": "pnpm@11.28.9",
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/svelte": "^5.7.0",
